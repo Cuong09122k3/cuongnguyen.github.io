@@ -1,136 +1,21 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cuong Nguyen | Portfolio</title>
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-        margin: 0;
-        background: linear-gradient(135deg, #4f46e5, #9333ea);
-        color: #fff;
-        text-align: center;
-      }
-      header {
-        padding: 60px 20px;
-      }
-      header h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-      }
-      header p {
-        font-size: 1.1rem;
-        opacity: 0.9;
-      }
-      nav {
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(6px);
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-      }
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.3s;
-      }
-      nav a:hover {
-        color: #ffde59;
-      }
-      section {
-        padding: 60px 20px;
-      }
-      section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-      }
-      .projects {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        padding: 20px;
-      }
-      .card {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 15px;
-        padding: 20px;
-        transition: transform 0.3s, background 0.3s;
-      }
-      .card:hover {
-        transform: translateY(-5px);
-        background: rgba(255, 255, 255, 0.2);
-      }
-      footer {
-        padding: 20px;
-        background: rgba(0, 0, 0, 0.2);
-        font-size: 0.9rem;
-      }
-      a.btn {
-        display: inline-block;
-        background: #ffde59;
-        color: #333;
-        padding: 10px 20px;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 600;
-        margin-top: 20px;
-        transition: background 0.3s;
-      }
-      a.btn:hover {
-        background: #facc15;
-      }
-    </style>
-  </head>
-  <body>
-    <nav>
-      <a href="#about">Giới thiệu</a>
-      <a href="#projects">Dự án</a>
-      <a href="#contact">Liên hệ</a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat với Gemini 🤖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <h2>💬 Chat với Gemini AI</h2>
+    <div id="chat-box"></div>
+    <div class="input-area">
+      <input id="user-input" type="text" placeholder="Nhập tin nhắn..." />
+      <button id="send-btn">Gửi</button>
+    </div>
+  </div>
 
-    <header>
-      <h1>Xin chào, mình là Cường 👋</h1>
-      <p>Lập trình viên trẻ yêu công nghệ và sáng tạo!</p>
-      <a href="#projects" class="btn">Xem dự án</a>
-    </header>
-
-    <section id="about">
-      <h2>👨‍💻 Giới thiệu</h2>
-      <p>
-        Mình là sinh viên kỹ thuật, đam mê lập trình nhúng và web. Mục tiêu của
-        mình là tạo ra những sản phẩm giúp cuộc sống thông minh hơn.
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>🚀 Dự án nổi bật</h2>
-      <div class="projects">
-        <div class="card">
-          <h3>ESP32 IoT Dashboard</h3>
-          <p>Hệ thống theo dõi nhiệt độ & độ ẩm dùng ESP32 + Blynk.</p>
-        </div>
-        <div class="card">
-          <h3>Robot 4 chân</h3>
-          <p>Điều khiển bằng Bluetooth qua ứng dụng di động.</p>
-        </div>
-        <div class="card">
-          <h3>Website cá nhân</h3>
-          <p>Trang portfolio được host miễn phí trên GitHub Pages.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>📫 Liên hệ</h2>
-      <p>💌 Email: <b>cuong@example.com</b></p>
-      <p>🌐 GitHub: <a href="https://github.com/Cuong09122k3" target="_blank">Cuong09122k3</a></p>
-    </section>
-
-    <footer>
-      © 2025 Cuong Nguyen — Made with 💙 using GitHub Pages
-    </footer>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
